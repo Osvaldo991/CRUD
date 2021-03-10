@@ -14,7 +14,7 @@ class UserController extends Controller
             'users' => $users
         ]);
     }
-    public function store(Resquest $request)
+    public function store(Request $request)
     {
         User::create([
             'name' => $request->name,
